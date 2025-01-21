@@ -240,7 +240,7 @@ class game {
                         if (i != 0)
                             mySnake[i] = new snake(names[Math.floor(Math.random() * 99999) % names.length], this, Math.max(Math.floor((mySnake[0].score > 10 * minScore) ? mySnake[0].score / 10 : minScore), mySnake[i].score / 10), this.randomXY(XX), this.randomXY(YY));
                         else {
-                            window.alert("Your Score: " + Math.floor(mySnake[i].score));
+                         
                             die = true;
                             window.location.href = ".";
                         }
